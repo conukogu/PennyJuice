@@ -19,13 +19,13 @@ const db_config = {
 const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
 
-if (process.env.NODE_ENV === "production"){
+// if (process.env.NODE_ENV === "production"){
     app.use(express.static('build'));
 
     app.get('/site*', (req, res) => {
         req.sendFile(path.resolve)(__dirname, 'build', 'index.html')
     })
-}
+// }
 
 
  app.use(bodyParser.urlencoded({extended: true}));
