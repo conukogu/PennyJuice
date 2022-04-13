@@ -1,0 +1,168 @@
+.myback{
+  background-color: #faf1e6;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("fruity.jpeg");
+    
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 30px;
+  text-align: center;
+  font-size: 36px;
+
+}
+
+#hero .hero-content {
+  position: relative;
+
+}
+
+.topstuff{
+  color: #ffc074; 
+  font-family: ‘Libre Baskerville’, serif;
+}
+
+
+
+.thegrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:2em;
+}
+
+.piece{
+  background-color: #faf1e6;
+  display: grid;
+  grid-template-columns: 1fr ;
+  
+}
+
+.no{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.pieceof{
+  background-color: #B6C867;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.pieceofpi{
+  background-color: #faf1e6;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.okay{
+  margin: 30px 90px;
+  text-align: center;
+  font-size: 30px;
+ color: #01937C;
+ border-radius: 5px;
+ box-sizing: border-box;
+ font-family: ‘Libre Baskerville’, serif;
+}
+
+
+
+
+
+.rain{
+    float:center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+.kids{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.juice{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+.order{
+  background-color: #B6C867; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  width: auto;
+  border: #B6C867;
+  font-family: ‘Libre Baskerville’, serif;
+}
+
+.order:hover{
+  background-color: #ffc074; 
+}
+
+
+.pennn {
+  text-align: center;
+    color:#b4822c;
+    font-size: 25px;  
+    font-family: ‘Libre Baskerville’, serif;
+}
+
+.pent{
+  text-align: center;
+    color:#F4EEA9;
+    font-size: 25px;
+    font-family: ‘Libre Baskerville’, serif;  
+}
+
+.pennyofa{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.learn{
+  margin: 30px 90px;
+  text-align: center;
+ background-color: #B6C867; 
+ border: #B6C867;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ width: auto;
+ font-family: ‘Libre Baskerville’, serif;
+}
+.learn:hover{
+  background-color: #ffc074; 
+
+}

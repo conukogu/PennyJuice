@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&display=swap');
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&display=swap') format( 'Darker Grotesque', 'Lexend','Libre Baskerville');
+// }
+
+
+
+#main2
+{
+position: relative;
+z-index: 1;
+}
+
+
+  .swiper-slide img.flavorPics2 { 
+    display: block;
+    top: 15%;
+    width: 95%;
+    height: 70vh;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 1em;
+    border-color:  rgb(6, 70, 53);
+    z-index: 1;
+  }
+
+
+
+  .swiper-slide h1.flaveName2{ 
+   opacity: 0;
+   position: relative;
+   top: 20%;
+   z-index: 5;
+   font-size: 3vw;
+   width: 25vw;
+   background-color: rgba(0, 0, 0, 0.543);
+   padding: 0.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    border-radius: 0.5em;
+    color: white;
+    text-align: center;
+  }
+
+  .HB2 button.HC { 
+   opacity: 1;
+   padding: 2%;
+   margin: 0%;
+   z-index: 6;
+  //  height: 7%;
+  //  width: 20vw;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 1em;
+    position: absolute;
+    bottom: 20%;
+  }
+
+   .HB2 button.HC p { 
+    font-size: 1.5vw;
+     padding-right: 2%;
+    margin: 0%;
+    font-family: 'Lexend', sans-serif;
+}
+  
+
+   .HB2 button.HC select { 
+    font-size: 1rem;
+    // width: 20%;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+  }
+
+
+  .swiper
+  {
+    width: 100%;
+    height: 100vh;
+    position: absolute; 
+  }
+
+   .swiper-slide {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .swiper-slide div.swiper-slide-shadow{
+      background-color: transparent
+  }
+
+//   .swiper-slide div.swiper-slide-prev h1{
+//       opacity: 0;
+//   }
+
+//    .swiper-slide div.swiper-slide-next h1{
+//       opacity: 0;
+//   }
+
+ .swiper-slide{
+     
+   opacity: 0.5;
+  }
+
+
+  .swiper-slide h1.flaveName2{ 
+   opacity: 0;
+   position: absolute;
+   top: 20%;
+   z-index: 5;
+  }
+
+
+     .swiper-slide.swiper-slide-active.HB2 button.HC {
+      opacity: 1;
+  }
+
+     .swiper-slide.HB2 button.HC {
+      opacity: 0;
+  }
+
+     .swiper-slide.swiper-slide-active h1.flaveName2{
+      opacity: 1;
+  }
+
+        .swiper-slide.swiper-slide-active img.flavorPics2{
+        border-style: solid;
+        border-width: 0.3em;
+        border-top: 3%;
+       border-color:  rgb(6, 70, 53);
+        }
+
+     .swiper-slide.swiper-slide-active .homeCartbutton2{
+      opacity: 1;
+  }
+
+
+// li.swiper-slide .swiper-slide-visible .swiper-slide-active h1 { 
+//    opacity: 1;
+//   }
+
+  .swiper-wrapper{
+    list-style: none;
+    padding: 0%;
+  }
+
+    div.swiper-button-next::after, div.swiper-button-prev::after  
+    {
+    font-weight:900;
+    -webkit-text-stroke-width: 0.1em;
+    transform: translateY(300%);
+   }
+
+     #main2 div.swiper-button-next
+   {
+      left:95.5%;
+     right: auto;
+   }
+
+    #main2 div.swiper-button-prev
+   {
+      right:95.5%;
+     left: auto;
+   }
+
+  
+  div.swiper-pagination {
+   transform: translateY(-575%);
+}

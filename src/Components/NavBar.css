@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&display=swap");
+
+body {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
+}
+.padding{
+  padding-top: 15px;
+}
+.navbar {
+  background-color: whitesmoke;
+  height: 12.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.nav-content button {
+  border-radius: 8px;
+  background-color: #ff914d;
+  color: white;
+}
+.par1 {
+  padding-left: 3rem;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  padding-bottom: 100px;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: whitesmoke;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+  z-index: 20;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #ff914d;
+}
+
+.nav-menu-items {
+  width: 100%;
+  /* background-color: #ff914d; */
+  
+}
+
+.navbar-toggle {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+.link-color {
+  color: black;
+}
+.link-color:hover {
+  color: #ff914d;
+}
+@media (min-width: 1300px)and (max-width: 3000px) {
+  .whole-nav-content{
+    display: none;
+  }
+  .secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 500px;
+  }
+  .par3{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .listedlinks{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  .listedlinks a{
+    padding-top: 1.875rem;
+    text-decoration: none; 
+
+  }
+  .orangelogo{
+    height: 300px;
+  }
+}
+@media (min-width: 1280px)and (max-width: 1290px) {
+  .whole-nav-content{
+    display: none;
+  }
+  .secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 300px;
+  }
+  .par3{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .listedlinks{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  .listedlinks a{
+    padding-top: 1.875rem;
+    text-decoration: none; 
+
+  }
+  .orangelogo{
+    height: 300px;
+  }
+}
+@media (min-width: 1024px)and (max-width: 1279px) {
+  .whole-nav-content{
+    display: none;
+  }
+  .secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 100px;
+  }
+  .par3{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .listedlinks{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  .listedlinks a{
+    padding-top: 1.875rem;
+    text-decoration: none; 
+
+  }
+  .orangelogo{
+    height: 300px;
+  }
+}
+@media (min-width: 820px) and (max-width: 1023px){
+  .whole-nav-content{
+    display: none;
+  }
+  .orangelogo {
+    height: 250px;
+    width: 300px;
+  }
+  .secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 30px;
+  }
+  .par3{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .listedlinks{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  .listedlinks a{
+    padding-top: 1.875rem;
+    text-decoration: none; 
+
+  }
+  .orangelogo{
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 819px){
+  .whole-nav-content{
+    display: none;
+  }
+  .orangelogo {
+    height: 250px;
+    width: 300px;
+  }
+  .secondnav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 10px;
+  }
+  .par3{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .listedlinks{
+    display: flex;
+    justify-content: space-between; 
+    gap: 5px;
+    padding-right: 20px;
+  }
+  .listedlinks a{
+    padding-top: 1.875rem;
+    text-decoration: none; 
+
+  }
+  .orangelogo{
+    height: 300px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .whole-nav-content {
+    height: 55vh;
+    background-color: whitesmoke;
+  }
+  .navbar-toggle {
+    height: 200px;
+  }
+  .secondnav {
+    display: none;
+  }
+  .nav-content {
+    padding-left: 4rem;
+  }
+  .submit-btn {
+    width: 200px;
+    padding-left: 40px;
+  }
+  .submit-btn button {
+    width: 250px;
+  }
+  .par1 {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+  .par2 {
+    font-size: 20px;
+    padding-left: px;
+  }
+  .orangelogo {
+    height: 250px;
+    width: 300px;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 412px) and (max-width: 539px) {
+  .whole-nav-content {
+    height: 38vh;
+    background-color: whitesmoke;
+  }
+  .secondnav {
+    display: none;
+  }
+  .navbar-toggle {
+    height: 200px;
+  }
+  .nav-content {
+    padding-left: 1px;
+  }
+  .submit-btn {
+    width: 200px;
+    padding-left: 20px;
+  }
+  .submit-btn button {
+    width: 250px;
+  }
+  .par1 {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+  .par2 {
+    font-size: 20px;
+    /* padding-left: 2px; */
+    width: 338px;
+  }
+  
+  .orangelogo {
+    height: 250px;
+    width: 300px;
+    /* padding-top: 200px; */
+    margin-top: 16%;
+  }
+}
+@media (min-width: 390px) and (max-width: 411px) {
+  .whole-nav-content {
+    height: 45vh;
+    background-color: whitesmoke;
+  }
+  .secondnav {
+    display: none;
+  }
+  .navbar-toggle {
+    height: 200px;
+  }
+  .nav-content {
+    padding-left: 0.04rem;
+  }
+  .submit-btn {
+    width: 200px;
+    padding-left: 40px;
+  }
+  .submit-btn button {
+    width: 250px;
+  }
+  .par1 {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+  .par2 {
+    font-size: 20px;
+    padding-left: 59px;
+    width: 314px;
+  }
+  .orangelogo {
+    height: 250px;
+    width: 300px;
+    /* padding-top: 200px; */
+    margin-top: 50%;
+  }
+
+}
+@media (min-width: 360px) and (max-width: 389px) {
+  .whole-nav-content {
+    height: 50vh;
+    background-color: whitesmoke;
+  }
+  .secondnav {
+    display: none;
+  }
+  .navbar-toggle {
+    height: 200px;
+  }
+  .nav-content {
+    padding-left: 1rem;
+  }
+  .submit-btn {
+    width: 200px;
+    padding-left: 20px;
+  }
+  .submit-btn button {
+    width: 200px;
+  }
+  .par1 {
+    font-size: 15px;
+    padding-left: 40px;
+  }
+  .par2 {
+    font-size: 15px;
+    padding-left: 1px;
+  }
+  .orangelogo {
+    height: 230px;
+    width: 230px;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 280px) and (max-width: 359px) {
+  .whole-nav-content {
+    height: 40vh;
+    background-color: whitesmoke;
+  }
+  .secondnav {
+    display: none;
+  }
+   .navbar-toggle {
+    height: 200px;
+  }
+  .nav-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+  .par1 {
+    font-size: 10px;
+  }
+  .par2 {
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .orangelogo {
+    height: 150px;
+    width: 200px;
+  }
+}

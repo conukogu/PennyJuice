@@ -1,0 +1,129 @@
+/* contact form css starts here  */
+
+.contact-container {
+  background: #f4eea9;
+  padding: 50px 100px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #f0bb62, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  width: 30vw;
+  height: 60vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-left: 470px;
+  padding:10px;
+  margin-top: 30px;
+  /* margin-bottom: 0px; */
+}
+
+.title {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.contact-input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px * 2;
+  margin-bottom: 15px * 2;
+  border: none;
+  border-bottom: 5px solid #85924b;
+  background: #f4eea9;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: “Lexend”, sans-serif;
+}
+.contact-input:focus {
+  border-bottom: 5px solid #f0bb62
+}
+
+.Contact-btn {
+  display: block;
+  margin: 0 auto;
+  line-height: 15px * 2;
+  padding: 0 20px;
+  background: #f0bb62;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 1px rgb(209, 109, 15), 3px 3px 1px 1px rgba(0, 0, 0, 1);
+  height: 30px;
+}
+
+.Contact-btn:hover {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.main-con {
+  background-image: url("https://cdn.vectorstock.com/i/1000x1000/87/04/mix-cute-fruits-seamless-pattern-background-vector-21058704.webp");
+  height: 82vh;
+  padding-top: 40px;
+  filter: grayscale(10%);
+}
+
+@media only screen and (max-width: 667px) {
+  .contact-container {
+    background: #f4eea9;
+    padding: 50px 100px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 15px 15px 1px #b6c867, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+    width: 70vw;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 35px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 41px;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .contact-container {
+    background: #f4eea9;
+    padding: 50px 100px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 15px 15px 1px #b6c867, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+    width: 70vw;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .main-con {
+    background-image: url("https://cdn.vectorstock.com/i/1000x1000/87/04/mix-cute-fruits-seamless-pattern-background-vector-21058704.webp");
+    height: 65vh;
+    padding-top: 40px;
+    filter: grayscale(10%);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .contact-container {
+    background: #f4eea9;
+    padding: 50px 100px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 15px 15px 1px #b6c867, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+    width: 60vw;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}

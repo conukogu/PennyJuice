@@ -1,0 +1,82 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&display=swap');
+*{
+  /* font-family: 'Darker Grotesque', sans-serif;*/
+/* font-family: 'Lexend', sans-serif;  */
+font-family: 'Libre Baskerville', serif;
+}
+.heroimgone_container {
+  width: 100%;
+  height: 80vh;
+  background: url(../../public/img/orangeblue.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.heroimgone_text {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding-top: 3.3em;
+  text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+  
+}
+
+.heroimgtwo {
+ background: url(../../public/img/kk.jpeg);
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.heroimgtwo_text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-top: 3.3em;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+  }
+
+.heroimgthree {
+    background: url(../../public/img/orangecent.jpeg);
+  height: 80vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.heroimgthree_text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-top: 3em;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+    
+ 
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.heroimgone_text {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    div.heroimgtwo_text {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    div.heroimgthree_text {
+      font-size: 20px;
+    }
+  }

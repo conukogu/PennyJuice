@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&family=Patua+One&family=Signika&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.orderhero {
+  width: 100%;
+  height: 40vh;
+  background: url("../public/img/papaya.jpeg") no-repeat center/cover;
+}
+.ordertext {
+  text-align: center;
+  width: 80%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding-top: 4em;
+  margin-left: 1.2em;
+  font-family: "Libre Baskerville", serif;
+}
+
+.orderform {
+  margin-left: 5.3em;
+  width: 80%;
+  height: 30vh;
+}
+.name {
+  width: 15em;
+  margin-top: 1em;
+  padding-left: 1em;
+  height: 45px;
+  margin-left: 1.5em;
+  border: solid 1px #b6c867;
+  border-radius: 5px;
+  font-family: "Lexend", sans-serif;
+}
+.formlabel {
+  padding-top: 1em;
+  margin-left: 1em;
+  font-family: "Darker Grotesque", sans-serif;
+}
+.orderinput {
+  width: 15em;
+  height: 45px;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border: solid 1px #b6c867;
+  padding-left: 1em;
+  font-family: "Lexend", sans-serif;
+}
+.productorder {
+  background-color: #ededed;
+  height: 180vh;
+  display: grid;
+  width:100%;
+  margin-top: 30em;
+  /* grid-template-rows: repeat(12, 1fr); */
+}
+.flavorh2 {
+  margin-left: 3em;
+  font-size: 3em;
+  font-family: "Darker Grotesque", sans-serif;
+}
+.flavors p {
+  font-size: 1rem;
+  text-align:center;
+  padding-top: 2em;
+  margin-left: 6.5em;
+  width: 50%;
+  font-family: "Lexend", sans-serif;
+}
+.value {
+  margin-left: 7em;
+}
+.Addbtn {
+  width: 30px;
+}
+#box {
+  width: 1em;
+  margin-right: 2em;
+  margin-left: 2em;
+  font-family: "Lexend", sans-serif;
+  background-color: transparent;
+  border: none;
+}
+.amounth2 {
+  font-family: "Lexend", sans-serif;
+}
+.itemamount {
+  margin-left: 9em;
+  padding-top: 1em;
+}
+
+#ordersubmitbtn {
+  height: 7vh;
+  width:15em;
+  background-color: black;
+  border: solid 1px black;
+  color: white;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.9em;
+  margin-top: 108em;
+  margin-left: 1em;
+  border-radius: 5px;
+}
+
+/*IPAD SIZE*/
+
+@media only screen and (min-width:600px){
+  .orderhero {
+    height: 60vh;
+  
+  }
+  .ordertext {
+    font-size: 4rem;
+    padding-top: 4em;
+    width: 80%;
+    text-align: center;
+    margin-left: 1em;
+  }
+  .ordercontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .productorder {
+    background-color: #ededed;
+    height: 105vh;
+    width: 60%;
+    /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+    margin-left: 22em;
+    margin-top: -60.5em;
+    margin-bottom: 6em;
+  }
+  .flavors {
+    margin-left: 1em;
+  }
+  .flavorh2 {
+    padding-top: 1em;
+    padding-left: 1em;
+    width: 100%;
+    font-size: 2em;
+  }
+  .flavors p {
+    font-size: 1rem;
+    padding-top: 1em;
+    font-family: "Lexend", sans-serif;
+    text-align: left;
+  }
+
+  .orderform {
+    margin-left: 2em;
+    margin-top: 3em;
+    height: 90vh;
+    width: 55%;
+  }
+  .name {
+    width: 17em;
+  }
+  .orderinput {
+    width: 17em;
+    height: 40px;
+    margin-left: 1.5em;
+    border: solid 1px #b6c867;
+  }
+  .Addbtn {
+    width: 20px;
+  }
+  #box {
+    width: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: transparent;
+    border: none;
+  }
+  .itemamount {
+    margin-top: -3.5em;
+    margin-left: 18em;
+  }
+  .amounth2 {
+    font-size: 1.5em;
+  }
+  .item {
+    height: 5vh;
+  }
+  #ordersubmitbtn {
+    height: 8vh;
+    background-color: black;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.9em;
+    margin-top: 6em;
+    margin-left: 1em;
+    position: relative;
+  }
+  #ordersubmitbtn:hover {
+    background-color: #b6c867;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .orderhero {
+    height: 60vh;
+  }
+  .ordertext {
+    font-size: 4.5rem;
+    padding-top: 2em;
+    width: 100%;
+    text-align: left;
+    margin-left: 2.3em;
+  }
+  .ordercontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .name {
+    width: 19em;
+    height: 40px;
+    margin-left: 1.5em;
+    border: solid 1px #b6c867;
+  }
+  .productorder {
+    background-color: #ededed;
+    height: 140vh;
+    width: 50%;
+    margin-bottom: 2em;
+    /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+    margin-left: 45em;
+    margin-top: -43.4em;
+  }
+  .flavors {
+    margin-left: 8em;
+  }
+  .flavorh2 {
+    padding-top: 1em;
+    margin-left: 5em;
+    width: 100%;
+    font-size: 2em;
+  }
+  .flavors p {
+    font-size: 1rem;
+    padding-left: -1em;
+    padding-top: 1.5em;
+    font-family: "Lexend", sans-serif;
+    text-align: left;
+  }
+
+  .orderform {
+    margin-left: 3em;
+    margin-top: 3em;
+    height: 90vh;
+    width: 50%;
+    
+  }
+  
+  .orderinput {
+    width: 19em;
+    height: 40px;
+    margin-left: 1.5em;
+    border: solid 1px #b6c867;
+    font-family: "Lexend", sans-serif;
+  }
+  .Addbtn {
+    width: 30px;
+    margin-top: 1em;
+  }
+  #box {
+    width: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: transparent;
+    border: none;
+  }
+  .itemamount {
+    margin-top: -2em;
+    margin-left: 20em;
+  }
+  .amounth2 {
+    font-size: 1.5em;
+  }
+  .item {
+    height: 5.3vh;
+  }
+  #ordersubmitbtn {
+    height: 10vh;
+    width:15em;
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.9em;
+    margin-top: 6em;
+    margin-left: 1em;
+    position: relative;
+    border-radius: 5px;
+  }
+  #ordersubmitbtn:hover {
+    background-color: #b6c867;
+    border:solid 1px #b6c867;
+  }
+}

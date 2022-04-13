@@ -1,0 +1,189 @@
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Lexend&family=Libre+Baskerville&display=swap') format( 'Darker Grotesque', 'Lexend','Libre Baskerville');}
+
+#main1
+{
+position: relative;
+z-index: 1;
+}
+
+
+  .swiper-slide img.flavorPics1 { 
+    display: block;
+    top: 15%;
+    width: 80%;
+    height: 50vh;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 1em;
+    z-index: 1;  
+  }
+
+  .swiper
+  {
+    width: 100%;
+    height: 100vh;
+    position: absolute; 
+     background-image: linear-gradient(to bottom, whitesmoke,rgba(236, 171, 30, 0.3) , rgba(255, 255, 0, 0.5),  white);
+  }
+
+   .swiper-slide {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  
+  }
+
+  .swiper-slide div.swiper-slide-shadow{
+      background-color: transparent
+  }
+
+//   .swiper-slide div.swiper-slide-prev h1{
+//       opacity: 0;
+//   }
+
+//    .swiper-slide div.swiper-slide-next h1{
+//       opacity: 0;
+//   }
+
+
+  .swiper-slide h1.flaveName1{ 
+   opacity: 0;
+   position: absolute;
+   top: 15%;
+   z-index: 5;
+  }
+
+  .swiper-slide .homeCartbutton1 { 
+   opacity: 1;
+   padding: 0%;
+   margin: 0%;
+   z-index: 6;
+  }
+
+     .swiper-slide.swiper-slide-active h1.flaveName1{
+      opacity: 1;
+  }
+
+       .swiper-slide.swiper-slide-active img.flavorPics1{
+        border-style: solid;
+    border-width: 0.3em;
+    border-top: 3%;
+     border-color:  rgb(6, 70, 53);
+  }
+
+     .swiper-slide.swiper-slide-active .homeCartbutton1{
+      opacity: 1;
+  }
+
+   .HB1 button.HC { 
+   opacity: 1;
+   padding: 0.5%;
+   margin: 0%;
+   z-index: 6;
+  //  height: 7%;
+  //  width: 30vw;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 0.7em;
+    position: absolute;
+    bottom: 40%;
+  }
+
+    .HB1 button.HC p { 
+    font-size: 2.5vw;
+     padding: 0%;
+      padding-right: 1%;
+    margin: 0%;
+   font-family: 'Lexend', sans-serif;
+}
+
+
+
+@media (max-width: 400px){
+  .HB1 button.HC p 
+  { font-size: 3.5vw;}
+   
+     .HB1 button.HC select
+      { font-size: 4vw;}
+    
+}
+
+     .swiper-slide.HB1 button.HC {
+      opacity: 0;
+  }
+
+    .swiper-slide.swiper-slide-active.HB1 button.HC {
+      opacity: 1;
+  }
+
+  .swiper-slide h1.flaveName1{ 
+   opacity: 0;
+   position: absolute;
+   top: 17%;
+   z-index: 5;
+   font-size: 4vw;
+   width: 60vw;
+   background-color: rgba(0, 0, 0, 0.543);
+   padding: 0.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    border-radius: 0.5em;
+    color: white;
+    text-align: center;
+  }
+
+  
+   .HB1 button.HC select { 
+    // font-size: 2.5vw;
+    padding: 0%;
+    margin: 0%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+// li.swiper-slide .swiper-slide-visible .swiper-slide-active h1 { 
+//    opacity: 1;
+//   }
+
+  .swiper-wrapper{
+    list-style: none;
+    padding: 0%;
+  }
+
+    div.swiper-button-next::after , div.swiper-button-prev::after
+    {
+    color: rgb(6, 70, 53);
+    -webkit-text-stroke-width: 0.1em;
+    transform: translateY(0%);
+    font-size: 6vw;
+    
+   }
+
+    #main1 div.swiper-button-next , #main1 div.swiper-button-prev
+    {
+    top:57%;
+   }
+
+    #main1 div.swiper-button-next
+   {
+      left:65%;
+     right: auto;
+   }
+
+    #main1 div.swiper-button-prev
+   {
+      right:65%;
+     left: auto;
+   }
+
+
+  
+  div.swiper-pagination {
+   transform: translateY(-575%);
+}
