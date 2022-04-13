@@ -25,17 +25,18 @@ if (process.env.NODE_ENV === "production"){
     app.get('*', (req, res) => {
         req.sendFile(path.resolve)(__dirname, 'build', 'index.html')
     })
-
-    app.use(bodyParser.urlencoded({extended: true}));
-
-    app.get("/form", (req, res) => {
-  const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.dummydata;";
-  db.query(insertQ, (err, result) => {
-    res.send(result)
-  });
-
-    })
 }
+
+
+ app.use(bodyParser.urlencoded({extended: true}));
+
+
+app.get("/form", (req, res) => {
+const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.dummydata;";
+db.query(insertQ, (err, result) => {
+    res.send(result);
+});
+});
 
 app.listen(port, (err) =>{
     if (err) return console.log(err);
