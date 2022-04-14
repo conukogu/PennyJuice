@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [message, setmessage] = useState("");
 
   const submitForm = (e) => {
-    // e.preventDefault()
+    e.preventDefault()
     Axios.post("http://pj-project.herokuapp.com/insert", {
       firstName: firstName,
       lastName: lastName,
