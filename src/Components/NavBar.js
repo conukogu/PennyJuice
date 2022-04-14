@@ -62,7 +62,7 @@ function Navbar() {
                 <Link to="/About" className="link-color">About</Link>
                 <Link to="/Products" className="link-color">Products</Link>
                 <Link to="/Order" className="link-color">Order</Link>
-                <Link to="/contact" className="link-color">Contact</Link>
+                <Link to="/Contact" className="link-color">Contact</Link>
               </ul>
             </nav>
           </div>

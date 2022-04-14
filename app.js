@@ -20,7 +20,7 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
 
 if (process.env.NODE_ENV === "production"){
-    app.use(express.static('build'));
+    app.use(express.static(__dirname + 'build'));
 }
 
     app.get("", (req, res) => {
