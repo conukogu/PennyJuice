@@ -13,12 +13,12 @@ const ContactForm = () => {
 
   const submitForm = (e) => {
     // e.preventDefault()
-    Axios.post("https://pennyjuice-db.herokuapp.com/insert", {
-      letters: firstName,
-      numbers: lastName,
-      // email: email,
-      // phoneNumber: phoneNumber,
-      // message: message,
+    Axios.post("http://pj-project.herokuapp.com/insert", {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      phoneNumber: phoneNumber,
+      message: message,
     }).then(() => {
       console.log("succesful insert");
     });

@@ -32,11 +32,31 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
 
 app.get("/form", (req, res) => {
-const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.dummydata;";
+const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
 db.query(insertQ, (err, result) => {
     res.send(result);
 });
 });
+
+
+app.post("/insert", (req, res) => {
+  const firstName = req.body.firstName;
+  const lastName = req.body.lastName;
+  const email = req.body.email;
+  const phoneNumber = req.body.phoneNumber;
+  const message = req.body.message;
+
+  const sqlInsert =
+    "INSERT INTO heroku_f62ce51aa2ee177.contactform(firstName, lastName, email, phoneNumber, message) VALUES (?,?,?,?,?);";
+  db.query(
+    sqlInsert,
+    [firstName, lastName, email, phoneNumber, message],
+    (err, result) => {
+      console.log(result);
+    }
+  );
+});
+
 
 app.listen(port, (err) =>{
     if (err) return console.log(err);
