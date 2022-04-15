@@ -36,18 +36,18 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
        });
      });
 
-
-if (process.env.NODE_ENV === "production") {
-
-
-  app.use(express.static(__dirname + "build"));
+  app.use(express.static("build"));
 
   app.get("", (req, res) => {
     req.sendFile(path.resolve)("build", "index.html");
   });
 
+  app.get("/About", (req, res) => {
+    req.sendFile(path.resolve)("build", "index.html");
+  });
 
-}
+
+// }
 
 
 
