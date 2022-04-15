@@ -32,7 +32,7 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
   app.use(express.static("build"));
 
-  app.get("*", (req, res) => {
+  app.get("", (req, res) => {
     req.sendFile(path.resolve)("build", "index.html");
   });
 // }
