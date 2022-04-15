@@ -20,6 +20,13 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
 // if (process.env.NODE_ENV === "production") {
 
+
+  app.use(express.static("build"));
+
+  app.get("", (req, res) => {
+    req.sendFile(path.resolve)("build", "index.html");
+  });
+
      app.use(bodyParser.urlencoded({extended: true}));
 
      app.get("/form", (req, res) => {
@@ -30,11 +37,6 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
      });
 
 
-  app.use(express.static("build"));
-
-  app.get("", (req, res) => {
-    req.sendFile(path.resolve)("build", "index.html");
-  });
 // }
 
 
