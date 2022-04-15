@@ -18,19 +18,26 @@ const db_config = {
 
 const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
+if (process.env.NODE_ENV === "production") {
+
+     app.use(bodyParser.urlencoded({extended: true}));
+
+     app.get("/form", (req, res) => {
+       const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
+       db.query(insertQ, (err, result) => {
+         res.send(result);
+       });
+     });
 
 
+  app.use(express.static("build"));
+
+  app.get("*", (req, res) => {
+    req.sendFile(path.resolve)("build", "index.html");
+  });
+}
 
 
- app.use(bodyParser.urlencoded({extended: true}));
-
-
-app.get("/form", (req, res) => {
-const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
-db.query(insertQ, (err, result) => {
-    res.send(result);
-});
-});
 
 
 app.post("/insert", (req, res) => {
@@ -50,15 +57,6 @@ app.post("/insert", (req, res) => {
     }
   );
 });
-
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
-
-  app.get("*", (req, res) => {
-    req.sendFile(path.resolve)("build", "index.html");
-  });
-}
 
 
 app.listen(port, (err) =>{
