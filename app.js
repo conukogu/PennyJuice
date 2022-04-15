@@ -29,7 +29,7 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
      app.use(bodyParser.urlencoded({extended: true}));
 
-     app.get("/form", (req, res) => 
+     app.get("/form", (req, res) => {
        const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
        db.query(insertQ, (err, result) => {
          res.send(result);
