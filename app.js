@@ -36,10 +36,10 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
        });
      });
 
-       app.use(express.static("build"));
+       app.use(express.static(__dirname + "build"));
 
-  app.get("/site", (req, res) => {
-    req.sendFile(path.resolve)(__dirname + "build", "index.html");
+  app.get("", (req, res) => {
+    req.sendFile(path.resolve)("build", "index.html");
   });
 
 
