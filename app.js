@@ -18,7 +18,7 @@ const db_config = {
 
 const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
 
      app.use(bodyParser.urlencoded({extended: true}));
 
@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === "production") {
   app.get("*", (req, res) => {
     req.sendFile(path.resolve)("build", "index.html");
   });
-}
+// }
 
 
 
