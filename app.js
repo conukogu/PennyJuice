@@ -27,18 +27,18 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 //     req.sendFile(path.resolve)("build", "index.html");
 //   });
 
-    //  app.use(bodyParser.urlencoded({extended: true}));
+     app.use(bodyParser.urlencoded({extended: true}));
 
-    //  app.get("/form", (req, res) => {
-    //    const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
-    //    db.query(insertQ, (err, result) => {
-    //      res.send(result);
-    //    });
-    //  });
+     app.get("/form", (req, res) => {
+       const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
+       db.query(insertQ, (err, result) => {
+         res.send(result);
+       });
+     });
 
 
 
-// if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
 
 
   app.use(express.static("build"));
@@ -48,7 +48,7 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
   });
 
 
-// }
+}
 
 
 
