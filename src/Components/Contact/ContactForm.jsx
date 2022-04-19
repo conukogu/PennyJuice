@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   const submitForm = (e) => {
     // e.preventDefault()
-    Axios.post("http://pj-project.herokuapp.com/insert", {
+    Axios.post("https://pj-project.herokuapp.com/api/insert", {
       firstName: firstName,
       lastName: lastName,
       email: email,
