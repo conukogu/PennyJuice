@@ -41,7 +41,7 @@ const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 if (process.env.NODE_ENV === "production") {
 
 
-  app.use(express.static("build"));
+  app.use('hey', __dirname + express.static("build"));
 
   app.get("", (req, res) => {
     req.sendFile(path.resolve)("build", "index.html");
