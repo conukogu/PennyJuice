@@ -31,9 +31,10 @@ app.use(express.static(path.join(__dirname, "/build")));
 //   });
 
 app.get("/api/getList", (req, res) => {
-  var list = ["item1", "item2", "item3"];
-  res.json(list);
-  console.log("Sent list of items");
+  const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
+  db.query(insertQ, (err, result) => {
+    res.send(result);
+  });
 });
 
 
