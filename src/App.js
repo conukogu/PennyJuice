@@ -8,7 +8,6 @@ import "./main.css";
 import Home from "./Pages/Home";
 import Order from "./Order";
 import Slider from "./Components/Slider";
-import FormData from "./Components/FormData";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<FormData />} />
+        <Route path="/" element={<Home />} />
         
         <Route path="/Home" element={<Home />} />
 
