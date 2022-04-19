@@ -18,7 +18,7 @@ const ContactForm = () => {
       lastName: lastName,
       email: email,
       phoneNumber: phoneNumber,
-      message: message,
+      message: message
     }).then(() => {
       console.log("succesful insert");
     });
