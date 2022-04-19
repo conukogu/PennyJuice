@@ -7,8 +7,6 @@ const path = require('path');
 
 const port = process.env.PORT || 3000;
 
-//bc778fd640b8ba:78a7b63d@us-cdbr-east-05.cleardb.net/heroku_f62ce51aa2ee177?
-
 const db_config = {
   host: "us-cdbr-east-05.cleardb.net",
   user: "bc778fd640b8ba",
@@ -18,17 +16,9 @@ const db_config = {
 
 const db=mysql.createPool({ connectionLimit: 5, ...db_config})
 
-// if (process.env.NODE_ENV === "production") {
-
-
-//   app.use(express.static("build"));
 
 app.use(express.static(path.join(__dirname, "/build")));
 
-
-//   app.get("", (req, res) => {
-//     req.sendFile(path.resolve)(__dirname, "build", "index.html");
-//   });
 
 app.get("/api/getList", (req, res) => {
   const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
@@ -42,36 +32,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/build/index.html"));
 });
 
-    //  app.use(bodyParser.urlencoded({extended: true}));
 
-    //  app.get("/form", (req, res) => {
-    //    const insertQ = "SELECT * FROM heroku_f62ce51aa2ee177.contactform;";
-    //    db.query(insertQ, (err, result) => {
-    //      res.send(result);
-    //    });
-    //  });
-
-    // }
-
-
-
-// if (process.env.NODE_ENV === "production") {
-
-
-//   app.use(express.static("build"));
-
-//   app.get("/", (req, res) => {
-//     req.sendFile(path.resolve)(__dirname + "build", "index.html");
-//   });
-  
-
-
-// }
-
-
-
-
-app.post("/insert", (req, res) => {
+app.post("/api/insert", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
