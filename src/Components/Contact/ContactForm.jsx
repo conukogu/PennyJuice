@@ -26,7 +26,6 @@ const ContactForm = () => {
 
   return (
     <>
-      {firstName}
       <div className="main-con">
         <form onSubmit={submitForm} className="contact-container">
           <div className="firstAndlast">
