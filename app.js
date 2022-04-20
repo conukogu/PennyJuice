@@ -33,7 +33,7 @@ app.get("*", (req, res) => {
 });
 
 
-app.post("/api/insert", (req, res) => {
+app.post("/api/getList", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
