@@ -32,6 +32,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/build/index.html"));
 });
 
+app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post("/api/insert", (req, res) => {
@@ -42,7 +43,7 @@ app.post("/api/insert", (req, res) => {
   const message = req.body.message;
 
   const sqlInsert =
-    "INSERT INTO heroku_f62ce51aa2ee177.contactform(firstName, lastName, email, phoneNumber, message) VALUES (?,?,?,?,?);";
+    "INSERT INTO heroku_f62ce51aa2ee177.contactform(firstName, lastName, email, phoneNumber, message) VALUES (?,?,?,?,?)";
   db.query(
     sqlInsert,
     [firstName, lastName, email, phoneNumber, message],
