@@ -13,12 +13,12 @@ const ContactForm = () => {
 
   const submitForm = (e) => {
     e.preventDefault()
-    Axios.post("https://pj-project.herokuapp.com/api/insert", {
+    Axios.post("https://pj-project.herokuapp.com/api/getList", {
       firstName: firstName,
       lastName: lastName,
       email: email,
       phoneNumber: phoneNumber,
-      message: message
+      message: message,
     }).then(() => {
       console.log("succesful insert");
     });
