@@ -11,7 +11,7 @@ const ContactForm = () => {
   const [phoneNumber, setphoneNumber] = useState("");
   const [message, setmessage] = useState("");
 
-  const submitForm = (e) => {
+  const submitForm = () => {
     // e.preventDefault()
     Axios.post("https://pj-project.herokuapp.com/api/insert", {
       firstName: firstName,
@@ -26,71 +26,71 @@ const ContactForm = () => {
 
   return (
     <>
-    <div className='main-con'>
-      <form className="contact-container">
-        <div className="firstAndlast">
-          <h1 className="title">First Name</h1>
+      <div className="main-con">
+        <form className="contact-container">
+          <div className="firstAndlast">
+            <h1 className="title">First Name</h1>
+            <input
+              required
+              className="contact-input"
+              type="text"
+              name="firstName"
+              placeholder="Peter"
+              onChange={(e) => {
+                setfirstName(e.target.value);
+              }}
+            />
+            <h1 className="title">Last Name</h1>
+            <input
+              required
+              className="contact-input"
+              type="text"
+              name="lastName"
+              placeholder="Parker"
+              onChange={(e) => {
+                setlastName(e.target.value);
+              }}
+            />
+          </div>
+          <h1 className="title">E-mail</h1>
           <input
-          required
+            required
             className="contact-input"
-            type="text"
-            name="firstName"
-            placeholder="Peter"
+            type="email"
+            name="email"
+            placeholder="myemail@gmail.com"
             onChange={(e) => {
-              setfirstName(e.target.value);
+              setemail(e.target.value);
             }}
           />
-          <h1 className="title">Last Name</h1>
+          <h1 className="title">Phone Number</h1>
           <input
-          required
+            required
             className="contact-input"
-            type="text"
-            name="lastName"
-            placeholder="Parker"
+            type="tel"
+            name="phoneNumber"
+            placeholder="980-222-4423"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             onChange={(e) => {
-              setlastName(e.target.value);
+              setphoneNumber(e.target.value);
             }}
           />
-        </div>
-        <h1 className="title">E-mail</h1>
-        <input
-        required
-          className="contact-input"
-          type="email"
-          name="email"
-          placeholder="myemail@gmail.com"
-          onChange={(e) => {
-            setemail(e.target.value);
-          }}
-        />
-        <h1 className="title">Phone Number</h1>
-        <input
-        required
-          className="contact-input"
-          type="tel"
-          name="phoneNumber"
-          placeholder="980-222-4423"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          onChange={(e) => {
-            setphoneNumber(e.target.value);
-          }}
-        />
-        <h1 className="title">Message</h1>
-        <input
-        required
-          className="contact-input"
-          type="text"
-          name="message"
-          placeholder="Feel Free To Send Us Feedback"
-          onChange={(e) => {
-            setmessage(e.target.value);
-          }}
-        />
+          <h1 className="title">Message</h1>
+          <input
+            required
+            className="contact-input"
+            type="text"
+            name="message"
+            placeholder="Feel Free To Send Us Feedback"
+            onChange={(e) => {
+              setmessage(e.target.value);
+            }}
+          />
 
-        <button className="Contact-btn" onClick={submitForm}>
-          Submit
-        </button>
-      </form>
+          <button type="submit" className="Contact-btn" onClick={submitForm}>
+            Submit
+          </button>
+        </form>
       </div>
     </>
   );
