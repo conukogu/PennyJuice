@@ -26,9 +26,9 @@ const ContactForm = () => {
 
   return (
     <>
-    {firstName}
+      {firstName}
       <div className="main-con">
-        <form className="contact-container">
+        <form onSubmit={submitForm} className="contact-container">
           <div className="firstAndlast">
             <h1 className="title">First Name</h1>
             <input
@@ -88,7 +88,7 @@ const ContactForm = () => {
             }}
           />
 
-          <button type="submit" className="Contact-btn" onClick={submitForm}>
+          <button type="submit" className="Contact-btn">
             Submit
           </button>
         </form>
