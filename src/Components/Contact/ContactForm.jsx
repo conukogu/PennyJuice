@@ -26,6 +26,7 @@ const ContactForm = () => {
 
   return (
     <>
+    {firstName}
       <div className="main-con">
         <form className="contact-container">
           <div className="firstAndlast">
